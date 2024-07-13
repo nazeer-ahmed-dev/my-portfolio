@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Tooltip as ReactTooltip } from "react-tooltip";
 import PortfolioImage from "../../images/portfolio-project-thumb.png";
 
 import {Tooltip as MUITooltip} from '@mui/material';
