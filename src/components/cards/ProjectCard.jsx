@@ -1,9 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+import { Tooltip as ReactTooltip } from "react-tooltip";
+import PortfolioImage from "../../images/portfolio-project-thumb.png";
+
+import {Tooltip as MUITooltip} from '@mui/material';
 
 const Card = styled.div`
   width: 330px;
-  height: 490px;
+  height: 444px;
   background-color: ${({ theme }) => theme.card};
   cursor: pointer;
   border-radius: 10px;
@@ -28,12 +32,24 @@ const Image = styled.img`
   box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
 `;
 const Tags = styled.div`
-  width: 100%;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 4px;
+  gap: 10px;
+  margin-top: 10px;
+`;
+const Tag = styled.div`
+  background-color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.white};
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: ${({ theme }) => theme.primaryDark};
+    transform: scale(1.1);
+  }
 `;
 const Details = styled.div`
   width: 100%;
@@ -73,6 +89,8 @@ const Description = styled.div`
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
+  position: relative;
+  cursor: pointer;
 `;
 const Members = styled.div`
   display: flex;
@@ -95,24 +113,41 @@ const Button = styled.a`
   text-align: center;
 `;
 
+
+const imageMap = {
+  1: PortfolioImage
+};
+
+
 const ProjectCard = ({ project }) => {
   return (
     <Card>
-      <Image src={project.image} />
-      <Tags></Tags>
+      <Image src={imageMap[project.id]} />
+
       <Details>
         <Title>{project.title}</Title>
         <Date>{project.date}</Date>
-        <Description>{project.description}</Description>
+        <Tags>
+          {project.tags?.map((tag, index) => (
+            <Tag key={index}>{tag}</Tag>
+          ))}
+        </Tags>
+        <MUITooltip  placement="right" title={project.description}>
+
+        <Description  data-tip={project.description}>
+          {project.description}
+        </Description>
+        </MUITooltip>
       </Details>
       <Members>
-        {project.member?.map((member) => (
-          <Avatar src={member.img} />
+        {project.members?.map((member, index) => (
+          <Avatar key={index} src={member.img} />
         ))}
       </Members>
       <Button href={project.github} target="_blank">
-        View Code
+        Preview
       </Button>
+
     </Card>
   );
 };

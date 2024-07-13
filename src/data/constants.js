@@ -235,25 +235,23 @@ export const education = [
 ];
 
 export const projects = [
-  // {
-  //   id: 11,
-  //   title: "DecisionHub",
-  //   date: "Jan 2024 - Dec 2023",
-  //   description:
-  //     "A Rule Builder application “Decision Hub” that empowers Business Analysts to create, save, and visualize decision strategies. Provide a no-code rule writing experience and visual representation to test these rules in real-time and observe the calculations at each step.",
-  //   image:
-  //     "https://github.com/risionHub/raw/master/assets/testRule.jpg",
-  //   tags: [
-  //     "React Js",
-  //     "PostgressSQL",
-  //     "Node Js",
-  //     "Express Js",
-  //     "Redux",
-  //     "React Flow",
-  //   ],
-  //   category: "web app",
-  //   github: "https://github.cnHub",
-  //   webapp: "https://deci/",
-  // },
+  {
+    id: 1,
+    title: "Portfolio",
+    date: "",
+    description:
+      "I developed a personal portfolio website using ReactJS to showcase my professional journey. The site includes an About section where visitors can learn about my background and interests. It features a Skills section that highlights my technical expertise and soft skills. My professional journey is detailed in the Experience section, listing previous roles and achievements. Additionally, the Projects section showcases my significant projects with descriptions and links to live demos or repositories. This portfolio is a comprehensive reflection of my capabilities, designed to engage potential employers and collaborators.",
+    image:
+      "",
+    tags: [
+      "React Js",
+      "MUI",
+      "react-three",
+    ],
+    category: "web app",
+    github: "https://nazeer-ahmed.vercel.app/",
+    webapp: "",
+  },
+
 ];
 
