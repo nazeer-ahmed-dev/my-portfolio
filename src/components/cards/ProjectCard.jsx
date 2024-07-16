@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PortfolioImage from "../../images/portfolio-project-thumb.png";
+import DawingProjectImage from "../../images/DawingProjectImage.png";
 
 import {Tooltip as MUITooltip} from '@mui/material';
 
@@ -114,7 +115,8 @@ const Button = styled.a`
 
 
 const imageMap = {
-  1: PortfolioImage
+  1: PortfolioImage,
+  2:DawingProjectImage
 };
 
 

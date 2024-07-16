@@ -252,6 +252,23 @@ export const projects = [
     github: "https://nazeer-ahmed.vercel.app/",
     webapp: "",
   },
+  {
+    id: 2,
+    title: "Drawing",
+    date: "",
+    description:
+      "This simple drawing application, built with react-canva-sig, allows users to create and save images effortlessly. Users can also clear the drawing board at any time for a fresh start.",
+    image:
+      "",
+    tags: [
+      "React Js",
+      "MUI",
+      "react-signature-canva"
+    ],
+    category: "mini-projects",
+    github: "https://nazeers-projects.vercel.app/drawing",
+    webapp: "",
+  },
 
 ];
 
