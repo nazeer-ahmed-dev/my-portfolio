@@ -269,6 +269,23 @@ export const projects = [
     github: "https://nazeers-projects.vercel.app/drawing",
     webapp: "",
   },
+  {
+    id: 3,
+    title: "Old Portfolio",
+    date: "",
+    description:
+      "Old-Portfolio: A classic HTML, CSS, and JavaScript-based personal portfolio showcasing my early web development skills and projects. Includes responsive design and interactive elements.",
+    image:
+      "",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    category: "web app",
+    github: "https://nazeer-ahmed-dev.github.io/portfolio/",
+    webapp: "",
+  },
 
 ];
 
