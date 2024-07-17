@@ -3,6 +3,7 @@ import styled from "styled-components";
 import PortfolioImage from "../../images/portfolio-project-thumb.png";
 import DawingProjectImage from "../../images/DawingProjectImage.png";
 import oldportfolio from "../../images/old-portfolio.png";
+import githubProfilePic from "../../images/githubProfilePic.png";
 
 
 import {Tooltip as MUITooltip} from '@mui/material';
@@ -119,7 +120,8 @@ const Button = styled.a`
 const imageMap = {
   1: PortfolioImage,
   2:DawingProjectImage,
-  3:oldportfolio
+  3:oldportfolio,
+  4:githubProfilePic
 };
 
 

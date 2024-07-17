@@ -286,6 +286,23 @@ export const projects = [
     github: "https://nazeer-ahmed-dev.github.io/portfolio/",
     webapp: "",
   },
+  {
+    id: 4,
+    title: "Github Profile Finder",
+    date: "",
+    description:
+      "This project allows users to view GitHub profiles by simply entering a GitHub username in a text field. Upon submission, the application retrieves and displays the user's profile information, including their avatar, bio, repositories, followers, and following count. It's a quick and easy way to access key details about any GitHub user.",
+    image:
+      "",
+    tags: [
+      "ReactJS",
+      "MUI",
+      "JavaScript"
+    ],
+    category: "mini-projects",
+    github:  "https://nazeers-projects.vercel.app/github-profile-finder",
+    webapp: "",
+  },
 
 ];
 
