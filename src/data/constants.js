@@ -303,6 +303,24 @@ export const projects = [
     github:  "https://nazeers-projects.vercel.app/github-profile-finder",
     webapp: "",
   },
+    {
+    id: 5,
+    title: "Organzation Chart",
+    date: "",
+    description:
+      "Developed an interactive and scalable organizational tree view, similar to an org-chart, for visualizing hierarchical structures within an organization. This tool enables users to easily navigate and understand the reporting relationships and departmental breakdowns within the company. Key features include dynamic data loading, expandable and collapsible nodes, and an intuitive user interface for seamless interaction. The project aims to improve organizational transparency and facilitate better management and decision-making processes",
+    image:
+      "",
+    tags: [
+      "ReactJS",
+      "MUI",
+      "react-d3-tree",
+      "JavaScript"
+    ],
+    category: "mini-projects",
+    github:  "https://nazeers-projects.vercel.app/org-tree",
+    webapp: "",
+  },
 
 ];
 
