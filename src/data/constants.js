@@ -254,21 +254,27 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Drawing",
+    title: "EST - website",
     date: "",
     description:
-      "This simple drawing application, built with react-canva-sig, allows users to create and save images effortlessly. Users can also clear the drawing board at any time for a fresh start.",
+      "Developed a comprehensive portfolio website for an educational organization, showcasing a collection of various sub-sites. This project highlights my expertise in web development, including user-friendly design, responsive layouts, and seamless navigation to provide an enriching experience for educators, students, and stakeholders.",
     image:
       "",
     tags: [
-      "React Js",
-      "MUI",
-      "react-signature-canva"
+      "NextJS",
+      "Tailwind CSS",
+      "TypeScript",
+      "JavaScript",
+      "eslint",
+      "react-slick",
+      
+      
     ],
-    category: "mini-projects",
-    github: "https://nazeers-projects.vercel.app/drawing",
+    category:  "web app",
+    github:  "https://est-site.vercel.app/",
     webapp: "",
   },
+ 
   {
     id: 3,
     title: "Old Portfolio",
@@ -321,6 +327,22 @@ export const projects = [
     github:  "https://nazeers-projects.vercel.app/org-tree",
     webapp: "",
   },
-
+  {
+    id: 6,
+    title: "Drawing",
+    date: "",
+    description:
+      "This simple drawing application, built with react-canva-sig, allows users to create and save images effortlessly. Users can also clear the drawing board at any time for a fresh start.",
+    image:
+      "",
+    tags: [
+      "React Js",
+      "MUI",
+      "react-signature-canva"
+    ],
+    category: "mini-projects",
+    github: "https://nazeers-projects.vercel.app/drawing",
+    webapp: "",
+  },
 ];
 
